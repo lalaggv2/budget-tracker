@@ -2,8 +2,8 @@
 
 Take a look at activity 14 in wk 18
 
-create app manifest
- //public/manifest.webmanifest
+-- create app manifest
+-- //public/manifest.webmanifest
 register and install a service worker
  //public/service-worker.js
 cache our files and deliver an offline experience
