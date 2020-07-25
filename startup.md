@@ -10,3 +10,4 @@ cache our files and deliver an offline experience
 
 make your app downloable
 utilize background sinc to enable sync of offline data when going back online
+
