@@ -52,6 +52,6 @@ undefined
 
 ### Questions ###
 
-<img src="https://avatars3.githubusercontent.com/u/11791361?v=4" alt="github avatar"/>
+<img src="https://avatars3.githubusercontent.com/u/11791361?v=4" width=200 height=200 alt="github avatar"/>
 
-For questions or additional information contact (https://api.github.com/users/undefined) directly at null.
+For questions or additional information contact (https://api.github.com/users/lalaggv2) directly at luangu2020@gmail.com
