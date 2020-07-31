@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const compression = require("compression");
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb: //localhost/mongoHeadlines";
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -27,6 +27,14 @@ app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
+});
+
+// Register your service worker:
+navigator.serviceWorker.register('/sw.js');
+
+// Then later, request a one-off sync:
+navigator.serviceWorker.ready.then(function (swRegistration) {
+  return swRegistration.sync.register('myFirstSync');
 });
 
 mongoose.connect(MONGODB_URI);

@@ -67,3 +67,10 @@ self.addEventListener("fetch", function (evt) {
     })
   );
 });
+
+//sync
+self.addEventListener('sync', function (evt) {
+  if (evt.tag == 'firstSync') {
+    evt.waitUntil(saveOffline());
+  }
+});
