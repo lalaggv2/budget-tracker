@@ -1,6 +1,6 @@
 const databaseName = "transaction";
 //const storeName = "transactionStore"
-const request = window.indexedDB.open(databaseName, 1);
+const request = indexedDB.open(databaseName, 1);
 let db;
 
 request.onupgradeneeded = (evt) => {
@@ -28,13 +28,13 @@ const saveRecord = (record) => {
 const checkDatabase = () => {
   const transaction = db.transaction(["pending"], "readwrite");
   const store = transaction.objectStore("pending");
-  const getAllRecords = store.getAllRecords();
+  const getAll = store.getAll();
 
-  getAllRecords.onsuccess = () => {
-    if (getAllRecords.result.length > 0) {
+  getAll.onsuccess = () => {
+    if (getAll.result.length > 0) {
       fetch("./api/transaction/bulk", {
         method: "POST",
-        body: JSON.stringify(getAllRecords.result),
+        body: JSON.stringify(getAll.result),
         headers: {
           Accept: "applications/json, text/plain, */*",
           "Content-Type": "application/json"
