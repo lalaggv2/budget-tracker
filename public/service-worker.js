@@ -1,4 +1,4 @@
-const FILES_TO_CACHE = ["/", "/index.html", "index.js"];
+const FILES_TO_CACHE = ["/", "/index.html", "index.js", "/styles.css"];
 
 const CACHE_NAME = "static-cache-v2";
 const DATA_CACHE_NAME = "data-cache-v1";
@@ -66,11 +66,4 @@ self.addEventListener("fetch", function (evt) {
       });
     })
   );
-});
-
-//sync
-self.addEventListener('sync', function (evt) {
-  if (evt.tag == 'firstSync') {
-    evt.waitUntil(saveOffline());
-  }
 });

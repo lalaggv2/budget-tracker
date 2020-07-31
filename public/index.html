@@ -54,10 +54,10 @@
         })
           .catch(err => {
             console.log(`Service Worker registration failed: ${err}`);
+            //   });
+            // navigator.serviceWorker.ready.then(function (swRegistration) {
+            //   return swRegistration.sync.register('firstSync');
           });
-        navigator.serviceWorker.ready.then(function (swRegistration) {
-          return swRegistration.sync.register('firstSync');
-        });
       });
     }
 

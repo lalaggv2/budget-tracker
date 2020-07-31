@@ -1,28 +1,22 @@
 const databaseName = "transaction";
-const storeName = "transactionStore"
+//const storeName = "transactionStore"
 const request = window.indexedDB.open(databaseName, 1);
-let db,
-  // tx,
-  // store;
+let db;
 
-  request.onupgradeneeded = (evt) => {
-    const db = request.result;
-    db.createObjectStore(storeName, { keyPath: "_id" });
-  };
+request.onupgradeneeded = (evt) => {
+  const db = evt.target.result;
+  db.createObjectStore("pendingTx", { autoIncrement: true });
+};
 
 request.onerror = function (evt) {
-  console.log("There was an error");
+  console.log("There was an error" + evt.target.errorCode);
 };
 
 request.onsuccess = function (evt) {
-  db = request.result;
-  tx = db.transaction(storeName, "readwrite");
-  store = tx.objectStore(storeName);
-
-  db.onerror = function (evt) {
-    console.log("error");
-  };
-
+  db = evt.target.result;
+  if (navigator.onLine) {
+    checkDatabase();
+  }
 };
 
 const saveRecord = (record) => {
@@ -58,4 +52,3 @@ const checkDatabase = () => {
 
 window.addEventListener('online', checkDatabase);
 
-// const saveOffline = () => {
