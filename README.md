@@ -1,16 +1,10 @@
-# budget-tracker
 
-
-#### Budget Tracker ####
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/undefined/budget-tracker)
-
-### Email Address ###
-
-null
+#### Budget-Tracker ####
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/lalaggv2/budget-tracker)
 
 ### Description ###
 
-App that allows you to track your expenses offline and updated them once you're back online.
+PWA application that allows users to input their expenses and reimbursements while on the road (offline) and updates automatically once online again.
 
 ### Table of Contents ###
 
@@ -34,7 +28,7 @@ undefined
 
 ### Usage ###
 
-Travelers who are not always near an internet connection
+Travelers
 
 ### License ###
 
@@ -48,10 +42,10 @@ Lalaggv2
 
 To run tests, run the following command:
 
-undefined
+npm run test
 
 ### Questions ###
 
-<img src="https://avatars3.githubusercontent.com/u/11791361?v=4" width=200 height=200 alt="github avatar"/>
+<img src="https://avatars0.githubusercontent.com/u/6589798?v=4" alt="github avatar" width=200px/>
 
-For questions or additional information contact (https://api.github.com/users/lalaggv2) directly at luangu2020@gmail.com
+For questions or additional information contact [lalaggv2](https://api.github.com/users/lalaggv2) at luangu2020@gmail.com
