@@ -6,6 +6,8 @@
 
 PWA application that allows users to input their expenses and reimbursements while on the road (offline) and updates automatically once online again.
 
+App is deployed to [Heroku](https://secure-dusk-69099.herokuapp.com/)
+
 ### Table of Contents ###
 
 * Installation
