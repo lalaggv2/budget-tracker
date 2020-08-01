@@ -2,8 +2,9 @@
 #### Budget-Tracker ####
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/lalaggv2/budget-tracker)
 
-![](public\imgs\Budgett1.PNG)
-![](public\imgs\budget2.PNG)
+#### Screen Shots
+<img src="public\imgs\Budgett1.PNG" alt="Budget Tracker 1" width=800px />
+<img src="public\imgs\budget2.PNG" alt="Budget Tracker 2" width=800px/>
 
 ### Description ###
 
