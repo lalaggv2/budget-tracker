@@ -2,6 +2,9 @@
 #### Budget-Tracker ####
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/lalaggv2/budget-tracker)
 
+![](public\imgs\Budgett1.PNG)
+![](public\imgs\budget2.PNG)
+
 ### Description ###
 
 PWA application that allows users to input their expenses and reimbursements while on the road (offline) and updates automatically once online again.
